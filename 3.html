@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="elemento1">
+        
+        <input type="text" v-model="nuevoLenguaje" />
+        <input type="text" v-model="nuevoLink" />
+        <button @click="agregarLenguaje" >Agregar Lenguaje</button>
+        <br><br>
+		{{contenido}}
+        <ul>
+            <li v-for="lenguaje of lenguajes"><a :href="lenguaje.link" target="_blank">{{lenguaje.nombre}}</a></li>
+        </ul>    
+	</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="3.js"></script>
+</body>
+</html>
