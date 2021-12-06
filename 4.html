@@ -12,11 +12,17 @@
         <br><br>
 		{{contenido}}
         <ul>
-            <li v-for="lenguaje of lenguajes"><a :href="lenguaje.link" target="_blank">{{lenguaje.nombre}}</a></li>
-        </ul>    
+            <li v-for="lenguaje of lenguajes">
+                <a :href="lenguaje.link" target="_blank">{{lenguaje.nombre}}</a> 
+                {{lenguaje.puntos}}
+                <button @click="lenguaje.puntos++">+</button>
+                <button @click="lenguaje.puntos--">-</button>
+            </li>
+        </ul>  
+        Suma Total {{sumarTodo}}  
 	</div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-	<script src="3.js"></script>
+	<script src="4.js"></script>
 </body>
 </html>

@@ -14,6 +14,8 @@ const con=new Vue({
     methods:{
         agregarLenguaje(){
             this.lenguajes.push({nombre:this.nuevoLenguaje, link:this.nuevoLink});
+            this.nuevoLenguaje='';
+            this.nuevoLink='';
             //console.log("Click");
         }
     }
