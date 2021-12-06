@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+	<div id="elemento1" class="container mt-5">
+        <div :class="['p-2','text-white',colorFondo]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, vitae temporibus explicabo nihil iste consequuntur natus enim voluptatum ut corrupti. In nisi quia totam repellendus quibusdam voluptas vero odit animi.</div>
+
+        <input type="text" v-model="colorFondo">
+
+        <div class="p-2" :class="{'bg-danger':cambioColor,'bg-primary':!cambioColor}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, vitae temporibus explicabo nihil iste consequuntur natus enim voluptatum ut corrupti. In nisi quia totam repellendus quibusdam voluptas vero odit animi.</div>
+       
+       <button class="btn btn-primary" @click="cambioColor=!cambioColor">Cambia Color</button>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="5.js"></script>
+</body>
+</html>
